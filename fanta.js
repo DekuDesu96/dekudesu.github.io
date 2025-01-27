@@ -1,13 +1,13 @@
 // Array con le squadre e i budget iniziali
 const teams = [
-    { name: "Squadra 1", budget: 500, purchases: [] },
-    { name: "Squadra 2", budget: 500, purchases: [] },
-    { name: "Squadra 3", budget: 500, purchases: [] },
-    { name: "Squadra 4", budget: 500, purchases: [] },
-    { name: "Squadra 5", budget: 500, purchases: [] },
-    { name: "Squadra 6", budget: 500, purchases: [] },
-    { name: "Squadra 7", budget: 500, purchases: [] },
-    { name: "Squadra 8", budget: 500, purchases: [] }
+    { name: "Campari Team", budget: 500, purchases: [] },
+    { name: "Pescaramanzia", budget: 500, purchases: [] },
+    { name: "Fratelli Manna", budget: 500, purchases: [] },
+    { name: "Berlusca Dortmund", budget: 500, purchases: [] },
+    { name: "Jaguars Soccer Club", budget: 500, purchases: [] },
+    { name: "Mutamosca", budget: 500, purchases: [] },
+    { name: "Steggy Gou", budget: 500, purchases: [] },
+    { name: "Passuli FC", budget: 500, purchases: [] }
   ];
   
   // Funzione per visualizzare le squadre e la cronologia degli acquisti
