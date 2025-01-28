@@ -48,5 +48,28 @@
 
   <!-- Collegamento al file JavaScript -->
   <script src="fanta.js"></script>
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAb3LhwSgd5-MnlC-w7zgr3nV9-2B33AYI",
+    authDomain: "fantasta-de2f4.firebaseapp.com",
+    projectId: "fantasta-de2f4",
+    storageBucket: "fantasta-de2f4.firebasestorage.app",
+    messagingSenderId: "321903029445",
+    appId: "1:321903029445:web:6f40d973e6f2eaa29d54ac",
+    measurementId: "G-J1467ZLLNZ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
