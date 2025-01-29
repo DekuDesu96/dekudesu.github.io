@@ -1,14 +1,14 @@
 // Array con le squadre e i budget iniziali
-const teams = [
-    { name: "Campari Team", budget: 500, purchases: [] },
-    { name: "Pescaramanzia", budget: 500, purchases: [] },
-    { name: "Fratelli Manna", budget: 500, purchases: [] },
-    { name: "Berlusca Dortmund", budget: 500, purchases: [] },
-    { name: "Jaguars Soccer Club", budget: 500, purchases: [] },
-    { name: "Mutamosca", budget: 500, purchases: [] },
-    { name: "Steggy Gou", budget: 500, purchases: [] },
-    { name: "Passuli FC", budget: 500, purchases: [] }
-  ];
+// const teams = [
+//     { name: "Campari Team", budget: 500, purchases: [] },
+//     { name: "Pescaramanzia", budget: 500, purchases: [] },
+//     { name: "Fratelli Manna", budget: 500, purchases: [] },
+//     { name: "Berlusca Dortmund", budget: 500, purchases: [] },
+//     { name: "Jaguars Soccer Club", budget: 500, purchases: [] },
+//     { name: "Mutamosca", budget: 500, purchases: [] },
+//     { name: "Steggy Gou", budget: 500, purchases: [] },
+//     { name: "Passuli FC", budget: 500, purchases: [] }
+//   ];
   // Inizializza Firestore
 const db = firebase.firestore();
 const teamsRef = db.collection("teams");
