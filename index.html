@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,7 @@
   <link rel="stylesheet" href="fanta.css">
 </head>
 <body>
-  <!-- Header principale -->
   <h1>Fantacalcio Budget Tracker</h1>
-
-  <!-- Tabella per visualizzare le squadre, i budget e la cronologia degli acquisti -->
   <div id="team-list">
     <table>
       <thead>
@@ -25,53 +22,32 @@
       </tbody>
     </table>
   </div>
-
-  <!-- Form per registrare un acquisto -->
   <form id="update-budget-form">
     <h2>Registra un Acquisto</h2>
-
-    <!-- Input per il nome della squadra -->
     <label for="team-name">Nome Squadra:</label>
     <input type="text" id="team-name" placeholder="Inserisci nome squadra" required>
-
-    <!-- Input per il nome del giocatore -->
     <label for="player-name">Nome Giocatore:</label>
     <input type="text" id="player-name" placeholder="Inserisci nome giocatore" required>
-
-    <!-- Input per il costo del giocatore -->
     <label for="player-cost">Costo Giocatore:</label>
     <input type="number" id="player-cost" placeholder="Inserisci costo giocatore" required>
-
-    <!-- Pulsante per inviare il form -->
     <button type="submit">Aggiorna Budget</button>
   </form>
-
-  <!-- Collegamento al file JavaScript -->
-  
-  <!-- Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"></script>
-
-<script>
-  // Configurazione di Firebase
-  const firebaseConfig = {
-    apiKey: "AIzaSyAb3LhwSgd5-MnlC-w7zgr3nV9-2B33AYI",
-    authDomain: "fantasta-de2f4.firebaseapp.com",
-    projectId: "fantasta-de2f4",
-    storageBucket: "fantasta-de2f4.appspot.com",
-    messagingSenderId: "321903029445",
-    appId: "1:321903029445:web:6f40d973e6f2eaa29d54ac",
-    measurementId: "G-J1467ZLLNZ"
-  };
-
-  // Inizializza Firebase
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.firestore();
-</script>
-
-<!-- Carica fanta.js dopo Firebase -->
-<script src="fanta.js"></script>
-
-  
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"></script>
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAb3LhwSgd5-MnlC-w7zgr3nV9-2B33AYI",
+      authDomain: "fantasta-de2f4.firebaseapp.com",
+      projectId: "fantasta-de2f4",
+      storageBucket: "fantasta-de2f4.appspot.com",
+      messagingSenderId: "321903029445",
+      appId: "1:321903029445:web:6f40d973e6f2eaa29d54ac",
+      measurementId: "G-J1467ZLLNZ"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="fanta.js"></script>
 </body>
 </html>
+      
